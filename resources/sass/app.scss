@@ -1,0 +1,30 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+@font-face {
+    font-family: "vazir";
+    src: url('../fonts/IRANSansX-Regular.woff');
+    src:url('../fonts/IRANSansX-Regular.woff2') format('woff2'), 
+        url('../fonts/IRANSansX-Regular.woff') format('woff');
+  }
+
+body{
+    direction: rtl;
+    text-align: right;
+    font-family: "vazir";
+}
+
+.page-item:last-child .page-link {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.page-item:first-child .page-link {
+    border-radius: 0px 5px 5px 0px;
+}
